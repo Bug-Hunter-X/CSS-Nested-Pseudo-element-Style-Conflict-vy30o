@@ -1,0 +1,24 @@
+/* nestedPseudoElementsSolution.css */
+.outer {
+  position: relative;
+  display: inline-block;
+}
+
+.outer::before {
+  content: "Outer";
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.inner {
+  position: relative;
+}
+
+.inner::after {
+  content: "Inner";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+/* Using specific selectors and position to make sure there are no style conflicts, and to make it clear how the elements should be positioned*/
