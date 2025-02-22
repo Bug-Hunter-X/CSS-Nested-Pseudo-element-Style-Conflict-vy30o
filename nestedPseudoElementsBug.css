@@ -1,0 +1,1 @@
+The CSS code has an unexpected behavior when a pseudo-element is used within a nested element that also uses a pseudo-element. The inner pseudo-element's styles conflict with or are overridden by the outer pseudo-element's styles in an unexpected way, leading to visual inconsistencies or broken layout. This often happens with pseudo-elements like :before and :after.
