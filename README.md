@@ -1,0 +1,5 @@
+This repository demonstrates a common, yet subtle bug in CSS related to nested pseudo-elements.  The bug arises from unexpected style interactions between pseudo-elements in nested HTML elements. The `nestedPseudoElementsBug.css` file shows the problematic code, while `nestedPseudoElementsSolution.css` provides a solution that clarifies style specificity and avoids conflicts.
+
+**Problem:** When pseudo-elements like `:before` and `:after` are nested, their styles can unexpectedly override each other in ways that aren't immediately obvious. This can lead to visual inconsistencies and layout problems.
+
+**Solution:** The solution involves careful consideration of CSS specificity and using more precise selectors to target the desired pseudo-element without conflicts.  This might involve using more specific selectors, the `!important` flag (use sparingly), or restructuring the HTML/CSS.
